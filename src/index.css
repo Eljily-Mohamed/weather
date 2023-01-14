@@ -5,8 +5,21 @@ body {
   margin : 0 ;
   padding: 0;
   box-sizing: border-box;
-  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fweather%2F&psig=AOvVaw0NTMixZmBiN4QVREHCIhYp&ust=1673812980291000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKiz37Ltx_wCFQAAAAAdAAAAABAK");
-  background-color: cadetblue;
+  background-color:#abdbe3;
+
+}
+/* stylin four the navbar  */
+
+.navbar{
+    width:auto;
+    height: auto;
+    background-attachment: fixed;
 }
 
-/* stylin four the navbar  */
+.navbar img{
+     width:120px;    
+}
+
+.App{
+   
+}
