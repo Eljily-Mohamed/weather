@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&family=Roboto:ital,wght@0,300;1,100&display=swap');
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -5,7 +7,7 @@ body {
   margin : 0 ;
   padding: 0;
   box-sizing: border-box;
-  background-color:#abdbe3;
+  background-color:black;
 
 }
 /* stylin four the navbar  */
@@ -14,12 +16,25 @@ body {
     width:auto;
     height: auto;
     background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    margin:140px 140px ;
+    margin-top:-1px;
 }
 
-.navbar img{
-     width:120px;    
+.navbar .logo {
+     width:auto;
+}
+.navbar .logo p{
+        color:white;
+        font-size: 25px;
+        font-family: 'Poppins', sans-serif;
+        font-weight:700;
+        
 }
 
+
+/* styling the App composant  */
 .App{
    
 }

@@ -22,7 +22,7 @@ const Navbar = function Navbar() {
                 <p>weather Checker</p>
              </div>
              <div className="mode-light">
-                 <button onClick={ChangeMode}><image src="http://www.w3.org/2000/svg"/></button>
+                 <button onClick={ChangeMode}><i class="fa-duotone fa-brightness-low"></i></button>
              </div>
         </div>
     );
