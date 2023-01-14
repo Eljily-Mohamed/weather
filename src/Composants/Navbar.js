@@ -1,4 +1,4 @@
-const Navabr = function N() {
+const Navbar = function Navbar() {
     return (
         <p>Helo world</p>
     );
