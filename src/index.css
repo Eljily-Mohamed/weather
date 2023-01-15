@@ -43,10 +43,10 @@ body {
     width: auto; 
 }
 
-#black , #white{
+#black , #white , svg{
       margin-top: 10px;
       border:none;
-      width: 20px;
+      width:35px;
 }
 
 #black{
