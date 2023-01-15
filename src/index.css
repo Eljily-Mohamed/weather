@@ -12,7 +12,7 @@ body {
 }
 /* stylin four the navbar  */
 
-.navbar{
+.black , .white{
     width:auto;
     height: auto;
     background-attachment: fixed;
@@ -22,34 +22,39 @@ body {
     margin-top:-1px;
 }
 
-.black .white .logo {
+.black .logo , .white .logo{
      width:auto;
 }
-
-.black .white .logo p{
+.black .logo p , .white .logo p{
         font-size: 25px;
         font-family: 'Poppins', sans-serif;
         font-weight:700;
 }
 
 .black .logo p{
-        color : white;
+     color:black;
 }
 
 .white .logo p{
-       color: black ;
+       color:white;
 }
 
-.black {
-    background-color: whi;
-    width:auto;
-}
-.black button {
-     background-color: white;
+.mode {
+    width: auto; 
 }
 
+#black , #white{
+      margin-top: 10px;
+      border:none;
+      width: 20px;
+}
 
-
+#black{
+      background-color: white;
+}
+#white{
+     background-color: black;
+}
 /* styling the App composant  */
 .App{
    
