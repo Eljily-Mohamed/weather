@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-
 const Navbar = function Navbar() {  
     const [stat, setStat] = useState("white");
     const ChangeMode = () => {
