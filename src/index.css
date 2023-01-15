@@ -22,16 +22,32 @@ body {
     margin-top:-1px;
 }
 
-.navbar .logo {
+.black .white .logo {
      width:auto;
 }
-.navbar .logo p{
-        color:white;
+
+.black .white .logo p{
         font-size: 25px;
         font-family: 'Poppins', sans-serif;
         font-weight:700;
-        
 }
+
+.black .logo p{
+        color : white;
+}
+
+.white .logo p{
+       color: black ;
+}
+
+.black {
+    background-color: whi;
+    width:auto;
+}
+.black button {
+     background-color: white;
+}
+
 
 
 /* styling the App composant  */
