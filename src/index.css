@@ -51,9 +51,11 @@ body {
 
 #black{
       background-color: white;
+      cursor: pointer;
 }
 #white{
      background-color: black;
+     cursor: pointer;
 }
 /* styling the App composant  */
 .App{
