@@ -9,6 +9,7 @@ const Navbar = function Navbar() {
     const ChangeMode = () => {
           if(stat === "white"){
               setStat("black");
+              setIcon(moon);
           }
           else{
               setStat("white");
