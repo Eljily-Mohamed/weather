@@ -7,20 +7,17 @@ body {
   margin : 0 ;
   padding: 0;
   box-sizing: border-box;
-  background-color:black;
 
 }
 /* stylin four the navbar  */
 
 .black , .white{
-    width:600px;
-    height: auto;
-    background-attachment: fixed;
+    width:calc(100% - 40%);
+    height:auto;
+    background-attachment:fixed;
     display: flex;
     justify-content: space-between;
-    margin:140px 140px ;
-    margin-top:-1px;
-
+    margin:10px auto;
 }
 
 .black .logo , .white .logo{
@@ -33,32 +30,48 @@ body {
 }
 
 .black .logo p{
-     color:black;
+     color:white;
 }
 
 .white .logo p{
-       color:white;
+       color:black;
 }
 
-.mode {
-    width: auto; 
-}
 
 #black , #white , img{
-      margin-top: 10px;
+      margin-top:13px;
       border:none;
       width:32px;
 }
 
+
 #black{
-      background-color: white;
+      background-color: black;
       cursor: pointer;
 }
 #white{
-     background-color: black;
+     background-color: white;
      cursor: pointer;
 }
-/* styling the App composant  */
-.App{
-             
+/* styling the Container  composant  */
+.container{
+      background-color:black;
+      width: calc(100% - 50%);
+      height: auto;
+      margin:10px auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+}
+
+.Serach{
+       width: 100%;
+       background-color: aliceblue;
+}
+
+.black-color p{
+     color:white;
+}  
+.white-color p{
+     color:black;
 }

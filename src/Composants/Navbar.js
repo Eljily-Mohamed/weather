@@ -1,25 +1,40 @@
 import React, { useEffect, useState } from "react";
-import moon from "./Images/moon.svg";
-import solie from "./Images/solie.svg";
+import moon from "./Images/moon.png";
+import solie from "./Images/solie.png";
+
 
 const Navbar = function Navbar() {  
     const [stat,setStat] = useState("white");
     const [icon,setIcon] = useState(moon);
+  
+    useEffect (() => {
+         document.body.style.backgroundColor = stat ;
+    },[stat,moon])
 
-    const ChangeMode = () => {
-          if(stat === "white"){
-              setStat("black");
-              setIcon(moon);
+    //function  on change mode 
+    const ChangeMode = (e) => {
+          let tousEelemnets = document.getElementsByTagName('div');
+
+          if(e.target.parentNode.value.toString() === "white"){
+             setStat ("black");
+             setIcon(solie);  
+             for(let i = 0 ; i<tousEelemnets ; i++){
+                 tousEelemnets[i].classList.add("black-color");
+             }
           }
           else{
-              setStat("white");
-              setIcon(solie);
-          }      
-          document.body.style.background = stat ;            
-        }
-        
+            setStat("white");
+            setIcon(moon);
+            for(let i = 0 ; i<tousEelemnets.length ; i++){
+                   tousEelemnets[i].classList.remove("black-color");
+            }
+            for (let i = 0; i< tousEelemnets.length; i++) {
+                   tousEelemnets[i].classList.add("white-color");
+               
+            }
+          }
+    }
     
-
     return (
         <div className={stat}>
              <div className="logo">
