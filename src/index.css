@@ -13,7 +13,7 @@ body {
 /* stylin four the navbar  */
 
 .black , .white{
-    width:auto;
+    width:600px;
     height: auto;
     background-attachment: fixed;
     display: flex;

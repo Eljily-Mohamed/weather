@@ -17,7 +17,8 @@ const Navbar = function Navbar() {
           }      
           document.body.style.background = stat ;            
         }
-
+        
+    
 
     return (
         <div className={stat}>
