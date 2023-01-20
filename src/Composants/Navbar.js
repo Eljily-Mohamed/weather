@@ -18,8 +18,12 @@ const Navbar = function Navbar() {
           if(e.target.parentNode.value.toString() === "white"){
              setStat ("black");
              setIcon(solie);  
-             for(let i = 0 ; i<tousEelemnets ; i++){
-                 tousEelemnets[i].classList.add("black-color");
+             for(let i = 0 ; i<tousEelemnets.length ; i++){
+                tousEelemnets[i].classList.remove("white-color");
+             }
+             for (let i = 0; i< tousEelemnets.length; i++) {
+                tousEelemnets[i].classList.add("black-color");
+            
              }
           }
           else{
