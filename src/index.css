@@ -23,35 +23,28 @@ body {
 .black .logo , .white .logo{
      width:auto;
 }
+
 .black .logo p , .white .logo p{
         font-size: 25px;
         font-family: 'Poppins', sans-serif;
         font-weight:700;
 }
 
-.black .logo p{
-     color:white;
+.mode img , button {
+     width:30px;
+     margin-top: 13px;
 }
 
-.white .logo p{
-       color:black;
+.black .black-color  button  {
+     background-color: black;
+     cursor: pointer;
+     border:none;
 }
 
-
-#black , #white , img{
-      margin-top:13px;
-      border:none;
-      width:32px;
-}
-
-
-#black{
-      background-color: black;
-      cursor: pointer;
-}
-#white{
+.white .white-color button {
      background-color: white;
      cursor: pointer;
+     border:none
 }
 /* styling the Container  composant  */
 .container{

@@ -6,16 +6,18 @@ import solie from "./Images/solie.png";
 const Navbar = function Navbar() {  
     const [stat,setStat] = useState("white");
     const [icon,setIcon] = useState(moon);
-  
+    let tousEelemnets = document.getElementsByTagName('div');
+
     useEffect (() => {
+        for (let i = 0; i< tousEelemnets.length; i++) {
+            tousEelemnets[i].classList.add("white-color");
+        }
          document.body.style.backgroundColor = stat ;
     },[stat,moon])
 
     //function  on change mode 
     const ChangeMode = (e) => {
-          let tousEelemnets = document.getElementsByTagName('div');
-
-          if(e.target.parentNode.value.toString() === "white"){
+          if(e.target.parentNode[0].value.toString() === "white"){
              setStat ("black");
              setIcon(solie);  
              for(let i = 0 ; i<tousEelemnets.length ; i++){
