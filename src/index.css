@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&family=Roboto:ital,wght@0,300;1,100&display=swap');
 
-/*    font-family: 'Poppins', sans-serif;
+/*  font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 */
 
@@ -10,6 +10,49 @@
     box-sizing: border-box;
 }
 
-body {
-     background-color: black;
+/*style pour nav */
+/*style white and black div */
+.white p{
+    color: black;
 }
+.black p{
+    color:white;
+}
+
+.nav-div {
+   margin: 0;
+   padding:0;
+   background-color: chocolate;
+   height:80px;
+}
+
+.petite-div {
+     margin: auto;
+     max-width: 600px;
+     min-width: 20;
+     background-color: royalblue;
+     color:white;
+     display: flex;
+     height:inherit;
+     justify-content: center;
+     align-items: center;
+}
+.title-div {
+      flex: 1;
+}
+.title-div p {
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+}
+.icon-div {
+     justify-content: flex-end;
+}
+.icon-div img{
+     width: 30px;
+     cursor: pointer;
+}
+
+
+
+
