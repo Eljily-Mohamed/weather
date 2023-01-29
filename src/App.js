@@ -1,4 +1,5 @@
-
+import Navbar from "./Componants/navbar";
+import './index.css';
 
 function App() {
   return (
