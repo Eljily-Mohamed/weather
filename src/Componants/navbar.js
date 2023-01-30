@@ -17,7 +17,6 @@ useEffect (() => {
 
 //function pour faire changment de mode
 
-
 let  changeMode  = (e) => {
     if(e.target.dataset.stat === "white"){
        console.log("Change mode");
@@ -38,7 +37,7 @@ let  changeMode  = (e) => {
             <div className="nav-div">
                  <div className="petite-div">
                      <div className="title-div">
-                        <p>App Eljily</p>
+                        <p>Weather Eljily</p>
                      </div>
                      <div className="icon-div">
                         <img src={icon} data-stat={mode}
