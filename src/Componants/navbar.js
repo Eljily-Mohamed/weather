@@ -30,13 +30,14 @@ let  changeMode  = (e) => {
         window.localStorage.setItem("mode","white");
         window.localStorage.setItem("icon",moon);
     }
+    window.location.reload();
 }
     return (
         <nav className ={mode}>
             <div className="nav-div">
                  <div className="petite-div">
                      <div className="title-div">
-                        <p>Weather Eljily</p>
+                        <p>App Eljily</p>
                      </div>
                      <div className="icon-div">
                         <img src={icon} data-stat={mode}

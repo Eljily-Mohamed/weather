@@ -15,6 +15,7 @@
 .white p{
     color: black;
 }
+
 .black p{
     color:white;
 }
@@ -22,7 +23,7 @@
 .nav-div {
    margin: 0;
    padding:0;
-   /* background-color: chocolate; */
+   background-color: chocolate;
    height:80px;
 }
 
@@ -30,8 +31,7 @@
      margin: auto;
      max-width: 600px;
      min-width: 20;
-     /* background-color: royalblue; */
-     color:white;
+     background-color: royalblue;
      display: flex;
      height:inherit;
      justify-content: center;
@@ -53,6 +53,49 @@
      cursor: pointer;
 }
 
+/* styling this container  */
 
+.container-child-div {
+    margin: auto;
+    max-width: 550px;
+    min-width: 20;
+    background-color:chocolate;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.search-div{
+     width: 100%;
+     height: auto;
+     margin: 0 10px;
+     background-color: chartreuse;
+}
 
+.search-contnent {
+      background-color: brown;
+      height:40px;
+      margin:5px;
+      display: flex;
+}
+.search-div img {
+       margin-top:5px;
+       width:30px;
+       height:30px;
+}
+
+.search-contnent input {
+     border: none;
+     height:29px;
+     width:80%;
+     margin-top:5px;
+     margin-left:5px;
+}
+
+.black .search-contnent input {
+     background-color: black;
+}
+
+.white .search-contnent input {
+     background-color: white;
+}
