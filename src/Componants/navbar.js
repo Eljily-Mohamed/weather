@@ -1,34 +1,47 @@
-import { useEffect , useStat } from "react";
+import { useEffect , useState } from "react";
 import sun from '../Images/sun.png';
 import moon from '../Images/moon.png';
 
-// useEffect(() => {
-      
-// },stat);
+//notre nav 
+const Navbar = function () {
 
-const stat = window.localStorage.getItem('stat');
+const [mode , setMode] = useState('');
+const [icon , setIcon] = useState('')
+    
+useEffect ((e) => {
+    setMode (window.localStorage.getItem('mode').toString());
+    setIcon (window.localStorage.getItem('icon').toS);
+    document.body.style.backgroundColor =mode;
 
- useStat [mode , setMode] = setMode(stat);
- useStat [icon , setIcon] = setIcon(moon)
+}, [])
+
+useEffect ((e) => {
+    window.localStorage.setItem('mode',mode);
+    window.localStorage.setItem('icon',icon);
+},[mode,icon])
 
 
 //function pour faire changment de mode 
-
 let  changeMode  = (e) => {
-     if(e.target.)
+    if(e.target.dataset.stat === "white"){ 
+       console.log("Change mode");
+       setMode("black");
+       setIcon(sun);
+    }
+    else{
+        setMode("white");
+        setIcon(moon);
+    }
 }
-
-//notre nav 
-const Navbar = function () {
     return (
-        <nav className ="black">
+        <nav className ={mode}>
             <div className="nav-div">
                  <div className="petite-div">
                      <div className="title-div">
                         <p>App Eljily</p>
                      </div>
                      <div className="icon-div">
-                        <img src={moon} data-stat="lala"
+                        <img src={icon} data-stat={mode}
                                onClick={(e) => {
                                    changeMode(e);
                                }}></img>
