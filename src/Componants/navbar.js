@@ -5,7 +5,6 @@ import moon from '../Images/moon.png';
 //notre nav 
 const Navbar = function () {
 
-
 const [mode , setMode] = useState("white");
 const [icon , setIcon] = useState(moon)
 
