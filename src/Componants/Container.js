@@ -6,8 +6,6 @@ import search from "../Images/search.png";
 const Container =  function (props){ 
     const data = props.data;
     const mode = props.mode;
-    console.log(mode);
-    console.log(data);
      return ( 
             <div className={mode}>
                 <div className="container-child-div">
