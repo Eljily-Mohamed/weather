@@ -5,32 +5,32 @@ import moon from '../Images/moon.png';
 //notre nav 
 const Navbar = function () {
 
-const [mode , setMode] = useState('');
-const [icon , setIcon] = useState('')
-    
-useEffect ((e) => {
-    setMode (window.localStorage.getItem('mode').toString());
-    setIcon (window.localStorage.getItem('icon').toS);
-    document.body.style.backgroundColor =mode;
 
-}, [])
+const [mode , setMode] = useState("white");
+const [icon , setIcon] = useState(moon)
 
-useEffect ((e) => {
-    window.localStorage.setItem('mode',mode);
-    window.localStorage.setItem('icon',icon);
-},[mode,icon])
+useEffect (() => {
+    document.body.style.backgroundColor = window.localStorage.getItem('mode');
+    setMode (window.localStorage.getItem('mode'));
+    setIcon(window.localStorage.getItem('icon'));
+})
+
+//function pour faire changment de mode
 
 
-//function pour faire changment de mode 
 let  changeMode  = (e) => {
-    if(e.target.dataset.stat === "white"){ 
+    if(e.target.dataset.stat === "white"){
        console.log("Change mode");
        setMode("black");
        setIcon(sun);
+       window.localStorage.setItem("mode","black");
+       window.localStorage.setItem("icon",sun);
     }
     else{
         setMode("white");
         setIcon(moon);
+        window.localStorage.setItem("mode","white");
+        window.localStorage.setItem("icon",moon);
     }
 }
     return (
