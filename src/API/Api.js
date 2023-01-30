@@ -1,4 +1,3 @@
-
 const Api = function () {
     baseUrlApi = "http://api.openweathermap.org/data/2.5/weather?"
     city = "Kiffa"
@@ -10,6 +9,8 @@ const Api = function () {
                `${urlAPi}`.json() 
     ).then ((res) => res.json())
      .then ((data) => data);
+
+     console.log(data);
 }
 
 export default Api ;
