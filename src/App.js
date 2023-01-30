@@ -1,4 +1,5 @@
 import Navbar from "./Componants/navbar";
+import { useEffect , useState} from "react";
 import './index.css';
 import Api from "./API/Api";
 
@@ -12,23 +13,17 @@ function App() {
   const city = "kiffa"
   const API_KEY = "9fcb56825244936ffd8cccee30c8db8e";
 
-  // Note: the empty deps array [] means
-  // this useEffect will run once
-  // similar to componentDidMount()
 
 useEffect(() => {
   fetch(`${baseUrlApi}appid=${API_KEY}&q=${city}`)
     .then(res => res.json())
     .then(
       (result) => {
-        setIsLoaded(true);
+        setLoading(true);
         setData(result);
       },
-      // Note: it's important to handle errors here
-      // instead of a catch() block so that we don't swallow
-      // exceptions from actual bugs in components.
       (error) => {
-        setIsLoaded(true);
+        setLoading(true);
         setError(error);
       }
     )
