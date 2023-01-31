@@ -68,7 +68,7 @@
 .search-div{
      width: 90%;
      height: auto;
-     margin: 0 10px;
+     margin: 0 3px;
      padding-bottom: 20px;
 }
 
@@ -132,6 +132,10 @@ input:focus{
     font-size: 22px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+}
+
+.grie {
+    color:#53575d;
 }
 
 .child-temp-now{
