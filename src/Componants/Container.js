@@ -11,7 +11,7 @@ import humiditywhite from "../Images/humidity.svg";
 import humidityblack from "../Images/humidityblack.svg";
 
 import weatherwhite from "../Images/weathe.png";
-import weatherwhite from "../Images/weatherblack.png"
+import weatherblack from "../Images/weatherblack.png"
 
 import lodingblack from "../Images/lodingblack.svg";
 import lodingwhite from "../Images/lodingwhite.svg";
@@ -95,6 +95,12 @@ console.log(data);
             setHumidity(humiditywhite);
             setWeatherIcon(weatherwhite);
             setWinIcon(winwhite);
+        }else{
+            setIconContainer(searchBlack);
+            setLoding(lodingblack)
+            setHumidity(humidityblack);
+            setWeatherIcon(weatherblack);
+            setWinIcon(winblack);
         }
     })
 
@@ -139,7 +145,7 @@ console.log(data);
                               </div>                              
                            </div>
                            <div className="info-win-now">
-                              { data && data.list && data.list[0].wind.speed && <p> <img src={win}/> {Math.floor(data.list[0].wind.speed)}m/s </p>} {data && data.list && data.list[0].main.humidity && <p> <img src={humidity} />{data.list[0].main.humidity}% humidity</p>}
+                              { data && data.list && data.list[0].wind.speed && <p> <img src={winIcon}/> {Math.floor(data.list[0].wind.speed)}m/s </p>} {data && data.list && data.list[0].main.humidity && <p> <img src={humidity} />{data.list[0].main.humidity}% humidity</p>}
                            </div>
                            <div className="border-div"> 
                            </div>

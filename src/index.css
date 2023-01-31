@@ -158,9 +158,10 @@ input:focus{
 .info-win-now {
      width: 100%;
      display: flex;
+     
 }
 
-.info-win-now img {
+.info-win-now p img {
     width:20px;
     height:20px;
 }
