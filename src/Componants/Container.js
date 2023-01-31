@@ -5,6 +5,9 @@ import searchBlack from "../Images/SearchBlack.png";
 import searchwhite from "../Images/Searchwhite.png";
 import lodingblack from "../Images/lodingblack.svg";
 import lodingwhite from "../Images/lodingwhite.svg";
+import weathericon from "../Images/weathe.png";
+import win from "../Images/win.png";
+import  humidity from "../Images/humidity.png";
 
 const Container =  function (props){ 
     const mode = props.mode;
@@ -65,10 +68,36 @@ console.log(data);
                             </div>
                       </div>
                       <div className="child-div">
-                           {/* <p>div curent informations  </p> */}
+                           <div className="info-local-now">
+                               <span>Kiffa,Mr</span>
+                               <p>Tuesday, 12:49 PM, Moderate rain</p>
+                           </div>
+                           <div className="info-temp-now">
+                              <div className="child-temp-now">
+                                  <span>6°</span>
+                                  <p>Feels like 3°</p>
+                              </div>
+                              <div className="icon-temp-now">
+                                   <img src = {weathericon} ></img>
+                              </div>                              
+                           </div>
+                           <div className="info-win-now">
+                              <img src={win} /><p>11m/s</p><img src={humidity} /><p>75% humidity</p>
+                           </div>
+                           <div className="border-div"> 
+                           </div>
                       </div>
                       <div className="child-div">
-                             {/* <p>div les autres joure  </p> */}
+                            <div className="procain-days">
+                             <ul><li>
+                                <span>Wednesday</span>
+                                <span></span>
+                                <span></span>
+                             </li></ul>
+                             <ul><li></li></ul>
+                             <ul><li></li></ul>
+                             <ul><li></li></ul>
+                            </div>
                       </div>
                 </div>   
             </div>

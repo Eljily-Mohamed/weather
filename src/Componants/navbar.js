@@ -37,7 +37,7 @@ let  changeMode  = (e) => {
             <div className="nav-div">
                  <div className="petite-div">
                      <div className="title-div">
-                        <p>App Eljily</p>
+                        <p>Weather</p>
                      </div>
                      <div className="icon-div">
                         <img src={icon} data-stat={mode}

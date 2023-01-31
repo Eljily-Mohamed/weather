@@ -12,11 +12,11 @@
 
 /*style pour nav */
 /*style white and black div */
-.white p{
+.white {
     color: black;
 }
 
-.black p{
+.black {
     color:white;
 }
 
@@ -55,26 +55,29 @@
 /* styling this container  */
 
 .container-child-div {
-    margin: auto;
+    margin:auto;
     max-width:400px;
     min-width:20;
     padding: 0 15px;
     /* background-color:chocolate; */
     margin-top: 15px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .search-div{
-     width: 100%;
+     width: 90%;
      height: auto;
      margin: 0 10px;
-     border-bottom: 2px solid rgb(126, 239, 13) ;
+     padding-bottom: 20px;
 }
 
 .search-contnent {
       height:40px;
-      margin:5px;
+      width: 75%;
+      margin:auto;
       display: flex;
+      border-bottom: 2px solid rgb(126, 239, 13) ;
 }
 .search-div img {
        margin-top:10px;
@@ -112,3 +115,74 @@ input:focus{
     color:black
 }
 
+
+/* styling the div information  */
+
+.child-div {
+    width: 100%;
+    /* background-color: aqua; */
+    height: auto;
+    margin: 2px 10px;
+}
+
+.info-local-now{
+    /* background-color: rgb(67, 67, 67); */
+}
+.info-local-now span , .info-temp-now span{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.child-temp-now{
+    margin-top:30px;
+} 
+
+.info-temp-now {
+     /* background-color: brown; */
+     display: flex;
+     justify-content: space-between;
+}
+
+
+.icon-temp-now img {
+      width: 100px;
+      height: 100px;
+      margin-top: 10px;
+}
+
+.info-win-now {
+     width: 100%;
+     display: flex;
+}
+
+.info-win-now img {
+    width:20px;
+    height:20px;
+}
+
+.border-div {
+    margin-top:5px;
+    height:30px;
+    width: 100%;
+
+}
+.black .border-div {
+    border-bottom:2px solid white ;
+}
+.white .border-div {
+    border-bottom: 2px solid black;
+}
+
+
+/* styling div for prochaine days  */
+
+.procain-days{
+    background-color: brown;
+    margin: 10px;
+}
+
+.procain-days ul {
+    padding: 5px;
+    margin: 10px 0;
+}
