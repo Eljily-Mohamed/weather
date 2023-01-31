@@ -23,7 +23,6 @@
 .nav-div {
    margin: 0;
    padding:0;
-   background-color: chocolate;
    height:80px;
 }
 
@@ -31,7 +30,6 @@
      margin: auto;
      max-width: 600px;
      min-width: 20;
-     background-color: royalblue;
      display: flex;
      height:inherit;
      justify-content: center;
@@ -49,7 +47,7 @@
      justify-content: flex-end;
 }
 .icon-div img{
-     width: 30px;
+     width: 20px;
      cursor: pointer;
 }
 
@@ -57,9 +55,9 @@
 
 .container-child-div {
     margin: auto;
-    max-width: 550px;
+    max-width: 450px;
     min-width: 20;
-    background-color:chocolate;
+    /* background-color:chocolate; */
     margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -69,19 +67,19 @@
      width: 100%;
      height: auto;
      margin: 0 10px;
-     background-color: chartreuse;
+     border-bottom: 2px solid rgb(126, 239, 13) ;
 }
 
 .search-contnent {
-      background-color: brown;
       height:40px;
       margin:5px;
       display: flex;
 }
 .search-div img {
-       margin-top:5px;
-       width:30px;
-       height:30px;
+       margin-top:10px;
+       width:20px;
+       height:20px;
+       
 }
 
 .search-contnent input {
@@ -90,6 +88,11 @@
      width:80%;
      margin-top:5px;
      margin-left:5px;
+     font-size: 16px;
+}
+
+input:focus{
+    outline: none;
 }
 
 .black .search-contnent input {
@@ -99,3 +102,12 @@
 .white .search-contnent input {
      background-color: white;
 }
+
+.black .search-contnent input {
+    color : white;
+}
+
+.white .search-contnent input {
+    color:black
+}
+

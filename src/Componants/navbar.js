@@ -6,7 +6,7 @@ import moon from '../Images/moon.png';
 const Navbar = function () {
 
 const [mode , setMode] = useState("white");
-const [icon , setIcon] = useState(moon)
+const [icon , setIcon] = useState(moon);
 
 useEffect (() => {
     document.body.style.backgroundColor = window.localStorage.getItem('mode');
@@ -30,7 +30,6 @@ let  changeMode  = (e) => {
         window.localStorage.setItem("mode","white");
         window.localStorage.setItem("icon",moon);
     }
-    window.location.reload();
 }
     return (
         <nav className ={mode}>
