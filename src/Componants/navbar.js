@@ -30,6 +30,7 @@ let  changeMode  = (e) => {
         window.localStorage.setItem("mode","white");
         window.localStorage.setItem("icon",moon);
     }
+    document.location.reload();
 }
     return (
         <nav className ={mode}>

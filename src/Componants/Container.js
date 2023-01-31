@@ -9,9 +9,14 @@ import lodingwhite from "../Images/lodingwhite.svg";
 const Container =  function (props){ 
     const data = props.data;
     const mode = props.mode;
+    const load = props.loading;
+    const error = props.error;
     
     const [iconContainer , setIconContainer] = useState("");
     const [loding , setLoding ] = useState("");
+
+    console.log(load);
+
     useEffect(() =>{
         mode === "white" ? setIconContainer(searchwhite) : setIconContainer(searchBlack);
         mode === "white" ? setLoding(lodingwhite) : setLoding(lodingblack);
@@ -24,7 +29,7 @@ const Container =  function (props){
                             <div className="search-contnent">
                                 <img src={iconContainer} ></img>
                                 <input type="text" placeholder="Serch for a location" />
-                                <img src={loding} ></img>
+                                <img src={loding} ></img> 
                             </div>
                       </div>
                       <div className="child-div">
