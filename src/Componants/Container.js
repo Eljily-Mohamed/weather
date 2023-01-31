@@ -10,8 +10,8 @@ import winblack from "../Images/winblack.svg";
 import humiditywhite from "../Images/humidity.svg";
 import humidityblack from "../Images/humidityblack.svg";
 
-import weathericon from "../Images/weathe.png";
-
+import weatherwhite from "../Images/weathe.png";
+import weatherwhite from "../Images/weatherblack.png"
 
 import lodingblack from "../Images/lodingblack.svg";
 import lodingwhite from "../Images/lodingwhite.svg";
@@ -89,8 +89,13 @@ console.log(data);
 
 
     useEffect(() =>{
-        mode === "white" ? setIconContainer(searchwhite) : setIconContainer(searchBlack);
-        mode === "white" ? setLoding(lodingwhite) : setLoding(lodingblack);
+        if(mode == "white"){
+            setIconContainer(searchwhite);
+            setLoding(lodingwhite)
+            setHumidity(humiditywhite);
+            setWeatherIcon(weatherwhite);
+            setWinIcon(winwhite);
+        }
     })
 
     let dateString;
