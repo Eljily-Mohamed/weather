@@ -3,9 +3,19 @@ import { useState } from "react";
 import Api from "../API/Api";
 import searchBlack from "../Images/SearchBlack.png";
 import searchwhite from "../Images/Searchwhite.png";
+
+import winwhite from "../Images/win.svg";
+import winblack from "../Images/winblack.svg";
+
+import humiditywhite from "../Images/humidity.svg";
+import humidityblack from "../Images/humidityblack.svg";
+
+import weathericon from "../Images/weathe.png";
+
+
 import lodingblack from "../Images/lodingblack.svg";
 import lodingwhite from "../Images/lodingwhite.svg";
-import weathericon from "../Images/weathe.png";
+
 import win from "../Images/win.png";
 import  humidity from "../Images/humidity.png";
 
@@ -13,6 +23,11 @@ const Container =  function (props){
     const mode = props.mode;
         
     const [iconContainer , setIconContainer] = useState("");
+    const [winIcon, setWinIcon] = useState("");
+    const [weathericon , setWeatherIcon] = useState("");
+    const [humidity, setHumidity] = useState("");
+
+
     const [loding , setLoding ] = useState("");
 
     const [data, setData] = useState(null);
