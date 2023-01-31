@@ -91,8 +91,8 @@ console.log(data);
                             <div className="procain-days">
                              <ul><li>
                                 <span>Wednesday</span>
-                                <span></span>
-                                <span></span>
+                                <span><img src = {win} ></img></span>
+                                <span>8°/8°</span>
                              </li></ul>
                              <ul><li></li></ul>
                              <ul><li></li></ul>
