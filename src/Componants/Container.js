@@ -90,13 +90,30 @@ console.log(data);
                       <div className="child-div">
                             <div className="procain-days">
                              <ul><li>
-                                <span>Wednesday</span>
-                                <span><img src = {win} ></img></span>
-                                <span>8°/8°</span>
+                                <span class="span-day">Wednesday</span>
+                                <span class="span-image"><img src = {win} ></img></span>
+                                <span class="span-temp">8°/8°</span>
                              </li></ul>
-                             <ul><li></li></ul>
-                             <ul><li></li></ul>
-                             <ul><li></li></ul>
+                             <ul><li>
+                                <span class="span-day">Thursday</span>
+                                <span class="span-image"><img src = {win} ></img></span>
+                                <span class="span-temp">8°/8°</span>
+                             </li></ul>
+                             <ul><li>
+                                <span class="span-day">Friday</span>
+                                <span class="span-image"><img src = {win} ></img></span>
+                                <span class="span-temp">8°/8°</span>
+                             </li></ul>
+                             <ul><li>
+                                <span class="span-day">Saturday</span>
+                                <span class="span-image"><img src = {win} ></img></span>
+                                <span class="span-temp">8°/8°</span>
+                             </li></ul>
+                             <ul><li>
+                                <span class="span-day">Sunday</span>
+                                <span class="span-image"><img src = {win} ></img></span>
+                                <span class="span-temp">8°/8°</span>
+                             </li></ul>
                             </div>
                       </div>
                 </div>   

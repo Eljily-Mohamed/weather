@@ -178,11 +178,38 @@ input:focus{
 /* styling div for prochaine days  */
 
 .procain-days{
-    background-color: brown;
-    margin: 10px;
+    margin-left: -2px;
 }
 
+
 .procain-days ul {
-    padding: 5px;
     margin: 10px 0;
+    padding-bottom:20px;
+}
+
+.procain-days ul li{
+     display: flex;
+     justify-content: space-between;
+}
+
+.span-day {
+    flex: 1;
+    width:100%;
+}
+
+.span-image {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+}
+
+.span-temp {
+     flex: 1;
+     display: flex;
+     justify-content: flex-end;
+} 
+
+.span-image img{    
+    width:20px;
+    height: 20px;
 }
