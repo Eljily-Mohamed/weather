@@ -25,4 +25,3 @@ useEffect(() => {
 
 export default Api;
  
-
