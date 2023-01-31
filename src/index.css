@@ -34,6 +34,7 @@
      height:inherit;
      justify-content: center;
      align-items: center;
+     padding: 0 10px;
 }
 .title-div {
       flex: 1;
@@ -55,12 +56,12 @@
 
 .container-child-div {
     margin: auto;
-    max-width: 450px;
-    min-width: 20;
+    max-width:400px;
+    min-width:20;
+    padding: 0 15px;
     /* background-color:chocolate; */
     margin-top: 15px;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .search-div{
