@@ -10,6 +10,13 @@
    </div>
 </div>
 
+<table>
+  <tr>
+    <td valign="top"><img src="./Screens/black_screen.png"/></td>
+    <td valign="top"><img src="./Screens/loading_screen.png"/></td>
+  </tr>
+</table>
+
 
   <p align="center">
   <p>Light Mode</p>
