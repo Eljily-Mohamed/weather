@@ -1,8 +1,9 @@
 const Api = async () => {
   
   const  baseUrlApi = "https://api.openweathermap.org/data/2.5/forecast?"
-  const city = "casablanca"
-  const API_KEY = "9fcb56825244936ffd8cccee30c8db8e";
+  const city = "casablanca" //default city name 
+  const API_KEY = "here your API key"; 
+
 
   //pour recupere le image pour temparature 
   //http://openweathermap.org/img/wn/10d@2x.png
