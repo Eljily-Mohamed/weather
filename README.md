@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 # React weather checker
-A Progressive web Weather Application Built with React
-<p>This Weather Application takes a Query of the city Name and Returns the Information </p>
+<h4> A Progressive web Weather Application Built with React <h4>
+<h4>This Weather Application takes a Query of the city Name and Returns the Information </h4>
 <p align="center">
-  <p>Dark Mode</p>
+  <p display="flex">Dark Mode</p>
     <img src="./Screens/black_screen.png" width="50%" height="auto" />
     <img src="./Screens/loding_screen.png" width="50%" height="auto" />
   </p>
