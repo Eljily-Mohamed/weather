@@ -9,8 +9,7 @@
     <td valign="top"><img src="./Screens/loading_screen.png"/></td>
   </tr>
 </table>
-
-    <h2 display="flex">Light Mode</h2>
+<h2 display="flex">Light Mode</h2>
 <table>
   <tr>
     <td valign="top"><img src="./Screens/white_screen.png"/></td>
